@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registerActivity">
+
+    <EditText
+        android:id="@+id/Rname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Remail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Enter your email "
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/Rname"
+        app:layout_constraintStart_toStartOf="@+id/Rname"
+        app:layout_constraintTop_toBottomOf="@+id/Rname" />
+
+    <EditText
+        android:id="@+id/Rpassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/Remail"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/Remail"
+        app:layout_constraintTop_toBottomOf="@+id/Remail" />
+
+    <Button
+        android:id="@+id/Rbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Register"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/Rpassword"
+        app:layout_constraintStart_toStartOf="@+id/Rpassword"
+        app:layout_constraintTop_toBottomOf="@+id/Rpassword" />
+
+    <Button
+        android:id="@+id/gtloginView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Go to login view"
+        app:layout_constraintEnd_toEndOf="@+id/Rbutton"
+        app:layout_constraintStart_toStartOf="@+id/Rbutton"
+        app:layout_constraintTop_toBottomOf="@+id/Rbutton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
